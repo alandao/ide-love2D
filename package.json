@@ -1,7 +1,7 @@
 {
     "name": "love2d-ide",
     "displayName": "love2d-ide",
-    "description": "Intellisense/Debuggingg",
+    "description": "Intellisense/Debugging",
     "version": "0.0.1",
     "publisher": "Alan",
     "engines": {
