@@ -14,7 +14,7 @@ export function activate(context: vscode.ExtensionContext) {
     let disposable = vscode.commands.registerCommand('extension.runLove', () => {
         let config = vscode.workspace.getConfiguration('love2d');
         let love2dPath = config.get("path") as string;
-        var child = spawn(love2dPath, [])
+        var child = spawn(love2dPath, [vscode.workspace.rootPath])
     });
     context.subscriptions.push(disposable);
 
