@@ -1,13 +1,21 @@
-# README
-## This is the README for your extension "love2d-ide"
-You can author your README using Visual Studio Code.  Here are some useful editor keyboard shortcuts:
+# ide-love2d
+## WIP
+This Visual Studio Code extension adds commands for running Love2D on the current folder.
+Only tested on Windows, sorry Mac and Linux users.
 
-* Split the editor (`Cmd+\` on OSX or `Ctrl+\` on Windows and Linux)
-* Toggle preview (`Shift+CMD+V` on OSX or `Shift+Ctrl+V` on Windows and Linux)
-* Press `Ctrl+Space` (Windows, Linux) or `Cmd+Space` (OSX) to see a list of Markdown snippets
+**Usage:**
+Set "love2d.path" in your user settings to where you've installed Love2D.
 
-### For more information
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
+Ex:
+{
+    "love2d.path": "C:/Program Files/LOVE/love.exe"
+}
+
+**Features:**
+* Run Love2D on the current open folder
+
+**TODO:**
+* Add debugging support
+* Configuration options for Love2D
 
 **Enjoy!**
