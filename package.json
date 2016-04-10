@@ -11,14 +11,27 @@
         "Other"
     ],
     "activationEvents": [
-        "onCommand:extension.sayHello"
+        "onCommand:extension.runLove"
     ],
     "main": "./out/src/extension",
     "contributes": {
-        "commands": [{
-            "command": "extension.sayHello",
-            "title": "Hello World"
-        }]
+        "configuration": {
+            "type": "object",
+            "title": "love2d-ide configuration",
+            "properties": {
+                "love2d.path": {
+                    "type": ["string", "null"],
+                    "default": null,
+                    "description": "The path for the Love2D executable."
+                }
+            }
+        },
+        "commands": [
+            {
+                "command": "extension.runLove",
+                "title": "Love2D: Run"
+            }
+        ]
     },
     "scripts": {
         "vscode:prepublish": "node ./node_modules/vscode/bin/compile",
